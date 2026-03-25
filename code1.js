@@ -33,7 +33,7 @@ gdjs.bin_95gameCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21221188);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19960380);
 }
 if (isConditionTrue_0) {
 gdjs.bin_95gameCode.GDbottleObjects2.length = 0;
@@ -134,7 +134,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount(runtimeScene, gdjs.bin_95gameCode.mapOfEmptyGDbottleObjects) > 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21223284);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19961836);
 }
 }
 }
@@ -176,7 +176,7 @@ for (var i = 0, k = 0, l = gdjs.bin_95gameCode.GDbottleObjects2.length;i<l;++i) 
 gdjs.bin_95gameCode.GDbottleObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21225084);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21480044);
 }
 }
 if (isConditionTrue_0) {
@@ -235,7 +235,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.physics2.areObjectsColliding(gdjs.bin_95gameCode.mapOfGDgdjs_9546bin_959595gameCode_9546GDbottleObjects1Objects, "Physics2", gdjs.bin_95gameCode.mapOfGDgdjs_9546bin_959595gameCode_9546GDfloorObjects1Objects, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21226716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21481764);
 }
 }
 if (isConditionTrue_0) {
