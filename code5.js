@@ -37,6 +37,18 @@ gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObject
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2= [];
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3= [];
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects4= [];
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects1= [];
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects2= [];
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects3= [];
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects4= [];
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects1= [];
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects2= [];
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects3= [];
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects4= [];
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects1= [];
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects2= [];
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects3= [];
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects4= [];
 
 
 gdjs.dishes_95gameCode.mapOfGDgdjs_9546dishes_959595gameCode_9546GDdishObjects1Objects = Hashtable.newFrom({"dish": gdjs.dishes_95gameCode.GDdishObjects1});
@@ -147,7 +159,7 @@ gdjs.dishes_95gameCode.eventsList3 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22659468);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23111116);
 }
 if (isConditionTrue_0) {
 gdjs.dishes_95gameCode.GDPixiDustObjects2.length = 0;
@@ -250,7 +262,7 @@ for (var i = 0, k = 0, l = gdjs.dishes_95gameCode.GDdishObjects2.length;i<l;++i)
 gdjs.dishes_95gameCode.GDdishObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22649884);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23101532);
 }
 }
 if (isConditionTrue_0)
@@ -285,7 +297,7 @@ for (var i = 0, k = 0, l = gdjs.dishes_95gameCode.GDdishObjects1.length;i<l;++i)
 gdjs.dishes_95gameCode.GDdishObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22651900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23103548);
 }
 }
 }
@@ -318,7 +330,7 @@ for (var i = 0, k = 0, l = gdjs.dishes_95gameCode.GDdishObjects1.length;i<l;++i)
 gdjs.dishes_95gameCode.GDdishObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22653052);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23104700);
 }
 }
 if (isConditionTrue_0) {
@@ -440,6 +452,18 @@ gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObject
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2.length = 0;
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3.length = 0;
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects4.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects1.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects2.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects3.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects4.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects1.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects2.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects3.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects4.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects1.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects2.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects3.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects4.length = 0;
 
 gdjs.dishes_95gameCode.eventsList4(runtimeScene);
 gdjs.dishes_95gameCode.GDdishObjects1.length = 0;
@@ -478,6 +502,18 @@ gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObject
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2.length = 0;
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3.length = 0;
 gdjs.dishes_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects4.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects1.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects2.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects3.length = 0;
+gdjs.dishes_95gameCode.GDcar_9595game_9595introObjects4.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects1.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects2.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects3.length = 0;
+gdjs.dishes_95gameCode.GDQuest_9595TextObjects4.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects1.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects2.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects3.length = 0;
+gdjs.dishes_95gameCode.GDSmallGreenButtonObjects4.length = 0;
 
 
 return;

@@ -1,7 +1,7 @@
 {
-  "name": "Healthy Homelands House ",
-  "short_name": "Healthy Homelands House ",
-  "id": "com.example.gamename",
+  "name": "Marthakal House Game",
+  "short_name": "Marthakal House Game",
+  "id": "com.marthakal.housegame",
   "description": "",
   "orientation": "landscape",
   "start_url": "./index.html",

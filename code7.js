@@ -28,6 +28,15 @@ gdjs.bookCode.GDRiver_9595StoryObjects3= [];
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects1= [];
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2= [];
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3= [];
+gdjs.bookCode.GDcar_9595game_9595introObjects1= [];
+gdjs.bookCode.GDcar_9595game_9595introObjects2= [];
+gdjs.bookCode.GDcar_9595game_9595introObjects3= [];
+gdjs.bookCode.GDQuest_9595TextObjects1= [];
+gdjs.bookCode.GDQuest_9595TextObjects2= [];
+gdjs.bookCode.GDQuest_9595TextObjects3= [];
+gdjs.bookCode.GDSmallGreenButtonObjects1= [];
+gdjs.bookCode.GDSmallGreenButtonObjects2= [];
+gdjs.bookCode.GDSmallGreenButtonObjects3= [];
 
 
 gdjs.bookCode.mapOfGDgdjs_9546bookCode_9546GDbook_95959595backObjects2Objects = Hashtable.newFrom({"book_back": gdjs.bookCode.GDbook_9595backObjects2});
@@ -203,7 +212,7 @@ for (var i = 0, k = 0, l = gdjs.bookCode.GDbook_9595frontObjects1.length;i<l;++i
 gdjs.bookCode.GDbook_9595frontObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22916332);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23389172);
 }
 }
 }
@@ -246,7 +255,7 @@ for (var i = 0, k = 0, l = gdjs.bookCode.GDbook_9595behindObjects1.length;i<l;++
 gdjs.bookCode.GDbook_9595behindObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22918172);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23406804);
 }
 }
 }
@@ -285,7 +294,7 @@ for (var i = 0, k = 0, l = gdjs.bookCode.GDbook_9595behindObjects1.length;i<l;++
 gdjs.bookCode.GDbook_9595behindObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22920516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23409356);
 }
 }
 if (isConditionTrue_0) {
@@ -324,7 +333,7 @@ for (var i = 0, k = 0, l = gdjs.bookCode.GDbook_9595frontObjects1.length;i<l;++i
 gdjs.bookCode.GDbook_9595frontObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22922548);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23408140);
 }
 }
 if (isConditionTrue_0) {
@@ -402,6 +411,15 @@ gdjs.bookCode.GDRiver_9595StoryObjects3.length = 0;
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects1.length = 0;
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2.length = 0;
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3.length = 0;
+gdjs.bookCode.GDcar_9595game_9595introObjects1.length = 0;
+gdjs.bookCode.GDcar_9595game_9595introObjects2.length = 0;
+gdjs.bookCode.GDcar_9595game_9595introObjects3.length = 0;
+gdjs.bookCode.GDQuest_9595TextObjects1.length = 0;
+gdjs.bookCode.GDQuest_9595TextObjects2.length = 0;
+gdjs.bookCode.GDQuest_9595TextObjects3.length = 0;
+gdjs.bookCode.GDSmallGreenButtonObjects1.length = 0;
+gdjs.bookCode.GDSmallGreenButtonObjects2.length = 0;
+gdjs.bookCode.GDSmallGreenButtonObjects3.length = 0;
 
 gdjs.bookCode.eventsList1(runtimeScene);
 gdjs.bookCode.GDbook_9595frontObjects1.length = 0;
@@ -431,6 +449,15 @@ gdjs.bookCode.GDRiver_9595StoryObjects3.length = 0;
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects1.length = 0;
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2.length = 0;
 gdjs.bookCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3.length = 0;
+gdjs.bookCode.GDcar_9595game_9595introObjects1.length = 0;
+gdjs.bookCode.GDcar_9595game_9595introObjects2.length = 0;
+gdjs.bookCode.GDcar_9595game_9595introObjects3.length = 0;
+gdjs.bookCode.GDQuest_9595TextObjects1.length = 0;
+gdjs.bookCode.GDQuest_9595TextObjects2.length = 0;
+gdjs.bookCode.GDQuest_9595TextObjects3.length = 0;
+gdjs.bookCode.GDSmallGreenButtonObjects1.length = 0;
+gdjs.bookCode.GDSmallGreenButtonObjects2.length = 0;
+gdjs.bookCode.GDSmallGreenButtonObjects3.length = 0;
 
 
 return;

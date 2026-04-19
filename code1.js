@@ -34,6 +34,15 @@ gdjs.bin_95gameCode.GDRiver_9595StoryObjects3= [];
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects1= [];
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2= [];
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3= [];
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects1= [];
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects2= [];
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects3= [];
+gdjs.bin_95gameCode.GDQuest_9595TextObjects1= [];
+gdjs.bin_95gameCode.GDQuest_9595TextObjects2= [];
+gdjs.bin_95gameCode.GDQuest_9595TextObjects3= [];
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects1= [];
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects2= [];
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects3= [];
 
 
 gdjs.bin_95gameCode.mapOfEmptyGDbottleObjects = Hashtable.newFrom({"bottle": []});
@@ -45,7 +54,7 @@ gdjs.bin_95gameCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22452516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22901996);
 }
 if (isConditionTrue_0) {
 gdjs.bin_95gameCode.GDbottleObjects2.length = 0;
@@ -146,7 +155,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount(runtimeScene, gdjs.bin_95gameCode.mapOfEmptyGDbottleObjects) > 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22454612);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22904092);
 }
 }
 }
@@ -188,7 +197,7 @@ for (var i = 0, k = 0, l = gdjs.bin_95gameCode.GDbottleObjects2.length;i<l;++i) 
 gdjs.bin_95gameCode.GDbottleObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22456412);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22905892);
 }
 }
 if (isConditionTrue_0) {
@@ -247,7 +256,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.physics2.areObjectsColliding(gdjs.bin_95gameCode.mapOfGDgdjs_9546bin_959595gameCode_9546GDbottleObjects1Objects, "Physics2", gdjs.bin_95gameCode.mapOfGDgdjs_9546bin_959595gameCode_9546GDfloorObjects1Objects, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22458044);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(22907524);
 }
 }
 if (isConditionTrue_0) {
@@ -299,6 +308,15 @@ gdjs.bin_95gameCode.GDRiver_9595StoryObjects3.length = 0;
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects1.length = 0;
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2.length = 0;
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3.length = 0;
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects1.length = 0;
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects2.length = 0;
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects3.length = 0;
+gdjs.bin_95gameCode.GDQuest_9595TextObjects1.length = 0;
+gdjs.bin_95gameCode.GDQuest_9595TextObjects2.length = 0;
+gdjs.bin_95gameCode.GDQuest_9595TextObjects3.length = 0;
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects1.length = 0;
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects2.length = 0;
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects3.length = 0;
 
 gdjs.bin_95gameCode.eventsList2(runtimeScene);
 gdjs.bin_95gameCode.GDbinObjects1.length = 0;
@@ -334,6 +352,15 @@ gdjs.bin_95gameCode.GDRiver_9595StoryObjects3.length = 0;
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects1.length = 0;
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects2.length = 0;
 gdjs.bin_95gameCode.GDWhere_9595do_9595germs_9595live_9595and_9595breedObjects3.length = 0;
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects1.length = 0;
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects2.length = 0;
+gdjs.bin_95gameCode.GDcar_9595game_9595introObjects3.length = 0;
+gdjs.bin_95gameCode.GDQuest_9595TextObjects1.length = 0;
+gdjs.bin_95gameCode.GDQuest_9595TextObjects2.length = 0;
+gdjs.bin_95gameCode.GDQuest_9595TextObjects3.length = 0;
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects1.length = 0;
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects2.length = 0;
+gdjs.bin_95gameCode.GDSmallGreenButtonObjects3.length = 0;
 
 
 return;
