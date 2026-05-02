@@ -34,6 +34,15 @@ gdjs.basketball_95gameCode.GDBasicExplosionEnergyObjects3= [];
 gdjs.basketball_95gameCode.GDLightningTextureObjects1= [];
 gdjs.basketball_95gameCode.GDLightningTextureObjects2= [];
 gdjs.basketball_95gameCode.GDLightningTextureObjects3= [];
+gdjs.basketball_95gameCode.GDTimeObjects1= [];
+gdjs.basketball_95gameCode.GDTimeObjects2= [];
+gdjs.basketball_95gameCode.GDTimeObjects3= [];
+gdjs.basketball_95gameCode.GDScoreObjects1= [];
+gdjs.basketball_95gameCode.GDScoreObjects2= [];
+gdjs.basketball_95gameCode.GDScoreObjects3= [];
+gdjs.basketball_95gameCode.GDcrowdObjects1= [];
+gdjs.basketball_95gameCode.GDcrowdObjects2= [];
+gdjs.basketball_95gameCode.GDcrowdObjects3= [];
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects1= [];
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects2= [];
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects3= [];
@@ -57,89 +66,60 @@ gdjs.basketball_95gameCode.GDSmallGreenButtonObjects2= [];
 gdjs.basketball_95gameCode.GDSmallGreenButtonObjects3= [];
 
 
-gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects = Hashtable.newFrom({"basketball": []});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects = Hashtable.newFrom({"basketball": gdjs.basketball_95gameCode.GDbasketballObjects2});
 gdjs.basketball_95gameCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24912348);
+{
+gdjs.copyArray(runtimeScene.getObjects("Quest_Text"), gdjs.basketball_95gameCode.GDQuest_9595TextObjects2);
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDQuest_9595TextObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDQuest_9595TextObjects2[i].getBehavior("Text").setText("'Shoot as many hoops as you can in 30 seconds!'");
 }
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("swipe"), gdjs.basketball_95gameCode.GDswipeObjects2);
-gdjs.basketball_95gameCode.GDbasketballObjects2.length = 0;
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDQuest_9595TextObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDQuest_9595TextObjects2[i].setCenterPositionInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2,gdjs.evtTools.window.getGameResolutionHeight(runtimeScene) / 2 - (gdjs.basketball_95gameCode.GDQuest_9595TextObjects2[i].getAABBCenterY()) / 2);
+}
+}
+}
 
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects, 800, 500, "Interactive");
 }
-{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects2.length ;i < len;++i) {
-    gdjs.basketball_95gameCode.GDbasketballObjects2[i].getBehavior("Scale").setScale(0.25);
+
+
+};gdjs.basketball_95gameCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "quest_intructions", 0, 0, 0);
 }
-}
-{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects2.length ;i < len;++i) {
-    gdjs.basketball_95gameCode.GDbasketballObjects2[i].getBehavior("Physics2").setStatic();
-}
-}
-{for(var i = 0, len = gdjs.basketball_95gameCode.GDswipeObjects2.length ;i < len;++i) {
-    gdjs.basketball_95gameCode.GDswipeObjects2[i].hide(false);
-}
-}
+
+{ //Subevents
+gdjs.basketball_95gameCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects = Hashtable.newFrom({"basketball": []});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects = Hashtable.newFrom({"basketball": gdjs.basketball_95gameCode.GDbasketballObjects2});
 gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedFlameObjects2Objects = Hashtable.newFrom({"RedFlame": gdjs.basketball_95gameCode.GDRedFlameObjects2});
 gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects = Hashtable.newFrom({"basketball": gdjs.basketball_95gameCode.GDbasketballObjects2});
-gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects = Hashtable.newFrom({"basketball": []});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects = Hashtable.newFrom({"basketball": gdjs.basketball_95gameCode.GDbasketballObjects2});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDhoopObjects2Objects = Hashtable.newFrom({"hoop": gdjs.basketball_95gameCode.GDhoopObjects2});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDBasicExplosionEnergyObjects2Objects = Hashtable.newFrom({"BasicExplosionEnergy": gdjs.basketball_95gameCode.GDBasicExplosionEnergyObjects2});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDLightningTextureObjects2Objects = Hashtable.newFrom({"LightningTexture": gdjs.basketball_95gameCode.GDLightningTextureObjects2});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects3Objects = Hashtable.newFrom({"RedExplosion": gdjs.basketball_95gameCode.GDRedExplosionObjects3});
-gdjs.basketball_95gameCode.asyncCallback24918644 = function (runtimeScene, asyncObjectsList) {
+gdjs.basketball_95gameCode.asyncCallback22258268 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.basketball_95gameCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("basketball"), gdjs.basketball_95gameCode.GDbasketballObjects3);
-
-gdjs.basketball_95gameCode.GDRedExplosionObjects3.length = 0;
-
-{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects3.length ;i < len;++i) {
-    gdjs.basketball_95gameCode.GDbasketballObjects3[i].deleteFromScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("crowd"), gdjs.basketball_95gameCode.GDcrowdObjects3);
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDcrowdObjects3.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDcrowdObjects3[i].getBehavior("Animation").setAnimationIndex(0);
 }
 }
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects3Objects, (( gdjs.basketball_95gameCode.GDbasketballObjects3.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects3[0].getPointX("")), (( gdjs.basketball_95gameCode.GDbasketballObjects3.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects3[0].getPointY("")), "Interactive");
+{gdjs.evtTools.sound.playSound(runtimeScene, "chill.mp3", false, 100, gdjs.randomFloatInRange(0.9, 1.1));
 }
 gdjs.basketball_95gameCode.localVariables.length = 0;
 }
-gdjs.basketball_95gameCode.idToCallbackMap.set(24918644, gdjs.basketball_95gameCode.asyncCallback24918644);
-gdjs.basketball_95gameCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.basketball_95gameCode.localVariables);
-for (const obj of gdjs.basketball_95gameCode.GDbasketballObjects2) asyncObjectsList.addObject("basketball", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.basketball_95gameCode.asyncCallback24918644(runtimeScene, asyncObjectsList)), 24918644, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects2Objects = Hashtable.newFrom({"RedExplosion": gdjs.basketball_95gameCode.GDRedExplosionObjects2});
-gdjs.basketball_95gameCode.asyncCallback24920660 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.basketball_95gameCode.localVariables);
-{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
-}
-gdjs.basketball_95gameCode.localVariables.length = 0;
-}
-gdjs.basketball_95gameCode.idToCallbackMap.set(24920660, gdjs.basketball_95gameCode.asyncCallback24920660);
+gdjs.basketball_95gameCode.idToCallbackMap.set(22258268, gdjs.basketball_95gameCode.asyncCallback22258268);
 gdjs.basketball_95gameCode.eventsList2 = function(runtimeScene) {
 
 {
@@ -149,7 +129,7 @@ gdjs.basketball_95gameCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.basketball_95gameCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.basketball_95gameCode.asyncCallback24920660(runtimeScene, asyncObjectsList)), 24920660, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.basketball_95gameCode.asyncCallback22258268(runtimeScene, asyncObjectsList)), 22258268, asyncObjectsList);
 }
 }
 
@@ -163,11 +143,130 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0));
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25067468);
 }
-{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.input.getCursorY(runtimeScene, "", 0));
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("swipe"), gdjs.basketball_95gameCode.GDswipeObjects2);
+gdjs.basketball_95gameCode.GDRedFlameObjects2.length = 0;
+
+gdjs.basketball_95gameCode.GDbasketballObjects2.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects, 800, 500, "Interactive");
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDbasketballObjects2[i].getBehavior("Scale").setScale(0.25);
+}
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDbasketballObjects2[i].getBehavior("Physics2").setStatic();
+}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedFlameObjects2Objects, (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointX("")), (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointY("")), "Interactive");
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDRedFlameObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDRedFlameObjects2[i].getBehavior("Sticker").Stick(gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects, null);
+}
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDswipeObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDswipeObjects2[i].hide(false);
+}
+}
+
+{ //Subevents
+gdjs.basketball_95gameCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects = Hashtable.newFrom({"basketball": []});
+gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects = Hashtable.newFrom({"basketball": []});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects = Hashtable.newFrom({"basketball": gdjs.basketball_95gameCode.GDbasketballObjects2});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDhoopObjects2Objects = Hashtable.newFrom({"hoop": gdjs.basketball_95gameCode.GDhoopObjects2});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDBasicExplosionEnergyObjects2Objects = Hashtable.newFrom({"BasicExplosionEnergy": gdjs.basketball_95gameCode.GDBasicExplosionEnergyObjects2});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDLightningTextureObjects2Objects = Hashtable.newFrom({"LightningTexture": gdjs.basketball_95gameCode.GDLightningTextureObjects2});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects2Objects = Hashtable.newFrom({"RedExplosion": gdjs.basketball_95gameCode.GDRedExplosionObjects2});
+gdjs.basketball_95gameCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16736684);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("crowd"), gdjs.basketball_95gameCode.GDcrowdObjects2);
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDcrowdObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDcrowdObjects2[i].getBehavior("Animation").setAnimationIndex(1);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "cheer.mp3", false, 40, gdjs.randomFloatInRange(0.9, 1.1));
+}
+}
+
+}
+
+
+};gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects2Objects = Hashtable.newFrom({"RedExplosion": gdjs.basketball_95gameCode.GDRedExplosionObjects2});
+gdjs.basketball_95gameCode.eventsList5 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21480164);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("crowd"), gdjs.basketball_95gameCode.GDcrowdObjects2);
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDcrowdObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDcrowdObjects2[i].getBehavior("Animation").setAnimationIndex(2);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "fail.mp3", false, 40, gdjs.randomFloatInRange(0.9, 1.1));
+}
+}
+
+}
+
+
+};gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects1Objects = Hashtable.newFrom({"basketball": gdjs.basketball_95gameCode.GDbasketballObjects1});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDfloorObjects1Objects = Hashtable.newFrom({"floor": gdjs.basketball_95gameCode.GDfloorObjects1});
+gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects1Objects = Hashtable.newFrom({"RedExplosion": gdjs.basketball_95gameCode.GDRedExplosionObjects1});
+gdjs.basketball_95gameCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15242580);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("crowd"), gdjs.basketball_95gameCode.GDcrowdObjects1);
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDcrowdObjects1.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDcrowdObjects1[i].getBehavior("Animation").setAnimationIndex(2);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "fail.mp3", false, 40, gdjs.randomFloatInRange(0.9, 1.1));
+}
+}
+
+}
+
+
+};gdjs.basketball_95gameCode.eventsList7 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25066292);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "time");
 }
 }
 
@@ -181,14 +280,9 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount(runtimeScene, gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects) < 1;
 if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getAsNumber() < 1);
-}
-}
-if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.basketball_95gameCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.basketball_95gameCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
@@ -205,23 +299,14 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount(runtimeScene, gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24913868);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25069084);
 }
 }
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("basketball"), gdjs.basketball_95gameCode.GDbasketballObjects2);
-gdjs.basketball_95gameCode.GDRedFlameObjects2.length = 0;
-
 {runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0));
 }
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.input.getCursorY(runtimeScene, "", 0));
-}
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedFlameObjects2Objects, (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointX("")), (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointY("")), "Interactive");
-}
-{for(var i = 0, len = gdjs.basketball_95gameCode.GDRedFlameObjects2.length ;i < len;++i) {
-    gdjs.basketball_95gameCode.GDRedFlameObjects2[i].getBehavior("Sticker").Stick(gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects, null);
-}
 }
 }
 
@@ -239,7 +324,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount(runtimeScene, gdjs.basketball_95gameCode.mapOfEmptyGDbasketballObjects) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24915908);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25071044);
 }
 }
 }
@@ -268,7 +353,7 @@ gdjs.copyArray(runtimeScene.getObjects("swipe"), gdjs.basketball_95gameCode.GDsw
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24916780);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25071948);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("swipe"), gdjs.basketball_95gameCode.GDswipeObjects2);
@@ -291,14 +376,17 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects2Objects, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDhoopObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24917980);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25073076);
 }
 }
 if (isConditionTrue_0) {
+/* Reuse gdjs.basketball_95gameCode.GDbasketballObjects2 */
 /* Reuse gdjs.basketball_95gameCode.GDhoopObjects2 */
 gdjs.basketball_95gameCode.GDBasicExplosionEnergyObjects2.length = 0;
 
 gdjs.basketball_95gameCode.GDLightningTextureObjects2.length = 0;
+
+gdjs.basketball_95gameCode.GDRedExplosionObjects2.length = 0;
 
 {runtimeScene.getScene().getVariables().getFromIndex(4).add(1);
 }
@@ -306,9 +394,15 @@ gdjs.basketball_95gameCode.GDLightningTextureObjects2.length = 0;
 }
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDLightningTextureObjects2Objects, (( gdjs.basketball_95gameCode.GDhoopObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDhoopObjects2[0].getPointX("")), (( gdjs.basketball_95gameCode.GDhoopObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDhoopObjects2[0].getPointY("")), "Interactive");
 }
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects2Objects, (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointX("")), (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointY("")), "Interactive");
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDbasketballObjects2[i].deleteFromScene(runtimeScene);
+}
+}
 
 { //Subevents
-gdjs.basketball_95gameCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.basketball_95gameCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
@@ -321,7 +415,7 @@ gdjs.copyArray(runtimeScene.getObjects("basketball"), gdjs.basketball_95gameCode
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.basketball_95gameCode.GDbasketballObjects2.length;i<l;++i) {
-    if ( !(gdjs.basketball_95gameCode.GDbasketballObjects2[i].getBehavior("InOnScreen").IsOnScreen(300, null)) ) {
+    if ( !(gdjs.basketball_95gameCode.GDbasketballObjects2[i].getBehavior("InOnScreen").IsOnScreen(100, null)) ) {
         isConditionTrue_0 = true;
         gdjs.basketball_95gameCode.GDbasketballObjects2[k] = gdjs.basketball_95gameCode.GDbasketballObjects2[i];
         ++k;
@@ -338,73 +432,11 @@ gdjs.basketball_95gameCode.GDRedExplosionObjects2.length = 0;
     gdjs.basketball_95gameCode.GDbasketballObjects2[i].deleteFromScene(runtimeScene);
 }
 }
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getAsNumber() == 1);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24920764);
-}
-}
-if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.basketball_95gameCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.basketball_95gameCode.eventsList5(runtimeScene);} //End of subevents
 }
 
-}
-
-
-};gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects1Objects = Hashtable.newFrom({"basketball": gdjs.basketball_95gameCode.GDbasketballObjects1});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDfloorObjects1Objects = Hashtable.newFrom({"floor": gdjs.basketball_95gameCode.GDfloorObjects1});
-gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects2Objects = Hashtable.newFrom({"RedExplosion": gdjs.basketball_95gameCode.GDRedExplosionObjects2});
-gdjs.basketball_95gameCode.asyncCallback24921404 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.basketball_95gameCode.localVariables);
-gdjs.copyArray(asyncObjectsList.getObjects("basketball"), gdjs.basketball_95gameCode.GDbasketballObjects2);
-
-gdjs.basketball_95gameCode.GDRedExplosionObjects2.length = 0;
-
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects2Objects, (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointX("")), (( gdjs.basketball_95gameCode.GDbasketballObjects2.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects2[0].getPointY("")), "Interactive");
-}
-{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects2.length ;i < len;++i) {
-    gdjs.basketball_95gameCode.GDbasketballObjects2[i].deleteFromScene(runtimeScene);
-}
-}
-gdjs.basketball_95gameCode.localVariables.length = 0;
-}
-gdjs.basketball_95gameCode.idToCallbackMap.set(24921404, gdjs.basketball_95gameCode.asyncCallback24921404);
-gdjs.basketball_95gameCode.eventsList4 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.basketball_95gameCode.localVariables);
-for (const obj of gdjs.basketball_95gameCode.GDbasketballObjects1) asyncObjectsList.addObject("basketball", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.basketball_95gameCode.asyncCallback24921404(runtimeScene, asyncObjectsList)), 24921404, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.basketball_95gameCode.eventsList5 = function(runtimeScene) {
-
-{
-
-
-gdjs.basketball_95gameCode.eventsList3(runtimeScene);
 }
 
 
@@ -418,13 +450,169 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.physics2.areObjectsColliding(gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDbasketballObjects1Objects, "Physics2", gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDfloorObjects1Objects, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(24921588);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25076132);
 }
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.basketball_95gameCode.GDbasketballObjects1 */
+gdjs.basketball_95gameCode.GDRedExplosionObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.basketball_95gameCode.mapOfGDgdjs_9546basketball_959595gameCode_9546GDRedExplosionObjects1Objects, (( gdjs.basketball_95gameCode.GDbasketballObjects1.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects1[0].getPointX("")), (( gdjs.basketball_95gameCode.GDbasketballObjects1.length === 0 ) ? 0 :gdjs.basketball_95gameCode.GDbasketballObjects1[0].getPointY("")), "Interactive");
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDbasketballObjects1.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDbasketballObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+
+{ //Subevents
+gdjs.basketball_95gameCode.eventsList6(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.basketball_95gameCode.eventsList8 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("RedFlame"), gdjs.basketball_95gameCode.GDRedFlameObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.basketball_95gameCode.GDScoreObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Time"), gdjs.basketball_95gameCode.GDTimeObjects2);
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDTimeObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDTimeObjects2[i].getBehavior("Text").setText("Time Left: " + gdjs.evtTools.common.toString(Math.ceil(30 - gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "time"))));
+}
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDScoreObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDScoreObjects2[i].getBehavior("Text").setText("Score: " + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString());
+}
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDRedFlameObjects2.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDRedFlameObjects2[i].setFlow(10 * runtimeScene.getScene().getVariables().getFromIndex(4).getAsNumber());
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0));
+}
+{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.input.getCursorY(runtimeScene, "", 0));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(11).setBoolean(true);
+}
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "basketball_song.mp3", 1, true, 80, 1);
+}
+
+{ //Subevents
+gdjs.basketball_95gameCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = !runtimeScene.getGame().getVariables().getFromIndex(11).getAsBoolean();
 }
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.basketball_95gameCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.basketball_95gameCode.eventsList7(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.basketball_95gameCode.eventsList9 = function(runtimeScene) {
+
+{
+
+
+gdjs.basketball_95gameCode.eventsList8(runtimeScene);
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "time") >= 30;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19787756);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
+}
+{gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 1);
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("crowd"), gdjs.basketball_95gameCode.GDcrowdObjects1);
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDcrowdObjects1.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDcrowdObjects1[i].getBehavior("Animation").setAnimationIndex(0);
+}
+}
+{gdjs.evtTools.sound.playSound(runtimeScene, "chill.mp3", false, 80, gdjs.randomFloatInRange(0.9, 1.1));
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("SmallGreenButton"), gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1.length;i<l;++i) {
+    if ( gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1[i].IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1[k] = gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Quest_Text"), gdjs.basketball_95gameCode.GDQuest_9595TextObjects1);
+/* Reuse gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1 */
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDQuest_9595TextObjects1.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDQuest_9595TextObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+{for(var i = 0, len = gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1.length ;i < len;++i) {
+    gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+{runtimeScene.getGame().getVariables().getFromIndex(11).setBoolean(false);
+}
 }
 
 }
@@ -468,6 +656,15 @@ gdjs.basketball_95gameCode.GDBasicExplosionEnergyObjects3.length = 0;
 gdjs.basketball_95gameCode.GDLightningTextureObjects1.length = 0;
 gdjs.basketball_95gameCode.GDLightningTextureObjects2.length = 0;
 gdjs.basketball_95gameCode.GDLightningTextureObjects3.length = 0;
+gdjs.basketball_95gameCode.GDTimeObjects1.length = 0;
+gdjs.basketball_95gameCode.GDTimeObjects2.length = 0;
+gdjs.basketball_95gameCode.GDTimeObjects3.length = 0;
+gdjs.basketball_95gameCode.GDScoreObjects1.length = 0;
+gdjs.basketball_95gameCode.GDScoreObjects2.length = 0;
+gdjs.basketball_95gameCode.GDScoreObjects3.length = 0;
+gdjs.basketball_95gameCode.GDcrowdObjects1.length = 0;
+gdjs.basketball_95gameCode.GDcrowdObjects2.length = 0;
+gdjs.basketball_95gameCode.GDcrowdObjects3.length = 0;
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects1.length = 0;
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects2.length = 0;
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects3.length = 0;
@@ -490,7 +687,7 @@ gdjs.basketball_95gameCode.GDSmallGreenButtonObjects1.length = 0;
 gdjs.basketball_95gameCode.GDSmallGreenButtonObjects2.length = 0;
 gdjs.basketball_95gameCode.GDSmallGreenButtonObjects3.length = 0;
 
-gdjs.basketball_95gameCode.eventsList5(runtimeScene);
+gdjs.basketball_95gameCode.eventsList9(runtimeScene);
 gdjs.basketball_95gameCode.GDbasketballObjects1.length = 0;
 gdjs.basketball_95gameCode.GDbasketballObjects2.length = 0;
 gdjs.basketball_95gameCode.GDbasketballObjects3.length = 0;
@@ -524,6 +721,15 @@ gdjs.basketball_95gameCode.GDBasicExplosionEnergyObjects3.length = 0;
 gdjs.basketball_95gameCode.GDLightningTextureObjects1.length = 0;
 gdjs.basketball_95gameCode.GDLightningTextureObjects2.length = 0;
 gdjs.basketball_95gameCode.GDLightningTextureObjects3.length = 0;
+gdjs.basketball_95gameCode.GDTimeObjects1.length = 0;
+gdjs.basketball_95gameCode.GDTimeObjects2.length = 0;
+gdjs.basketball_95gameCode.GDTimeObjects3.length = 0;
+gdjs.basketball_95gameCode.GDScoreObjects1.length = 0;
+gdjs.basketball_95gameCode.GDScoreObjects2.length = 0;
+gdjs.basketball_95gameCode.GDScoreObjects3.length = 0;
+gdjs.basketball_95gameCode.GDcrowdObjects1.length = 0;
+gdjs.basketball_95gameCode.GDcrowdObjects2.length = 0;
+gdjs.basketball_95gameCode.GDcrowdObjects3.length = 0;
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects1.length = 0;
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects2.length = 0;
 gdjs.basketball_95gameCode.GDPaper_9595Bark_9595VideoObjects3.length = 0;

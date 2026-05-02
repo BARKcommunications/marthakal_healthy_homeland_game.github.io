@@ -9,7 +9,7 @@ gdjs.evtsExt__ShakeObject3D__DefineHelperClasses = {};
 gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x1563f60 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x12c1928 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs._shakeObjectExtension) {
     return;
@@ -650,7 +650,7 @@ gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x1563f60(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x12c1928(runtimeScene, eventsFunctionContext);
 
 }
 

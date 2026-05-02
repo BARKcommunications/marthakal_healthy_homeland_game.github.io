@@ -9,7 +9,7 @@ gdjs.evtsExt__Tween3D__DefineHelperClasses = {};
 gdjs.evtsExt__Tween3D__DefineHelperClasses.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Tween3D__DefineHelperClasses.userFunc0xf8ad08 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Tween3D__DefineHelperClasses.userFunc0x131f8f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs.__tween3DExtension) {
   return;
@@ -246,7 +246,7 @@ gdjs.evtsExt__Tween3D__DefineHelperClasses.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__Tween3D__DefineHelperClasses.userFunc0xf8ad08(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Tween3D__DefineHelperClasses.userFunc0x131f8f8(runtimeScene, eventsFunctionContext);
 
 }
 
