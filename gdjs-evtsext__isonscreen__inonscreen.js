@@ -73,7 +73,7 @@ gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.idTo
 gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0x17bee80 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0x1629628 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /*
 Get the object layer, convert the position from this layer to the screen coordinates.
@@ -122,7 +122,7 @@ gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.even
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.GDObjectObjects1;
-gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0x17bee80(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0x1629628(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -162,16 +162,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },

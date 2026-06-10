@@ -9,7 +9,7 @@ gdjs.evtsExt__ShakeObject3D__DeleteAll = {};
 gdjs.evtsExt__ShakeObject3D__DeleteAll.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ShakeObject3D__DeleteAll.userFunc0x1219188 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__DeleteAll.userFunc0x14cc9b0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._shakeObjectExtension.noiseManager.deleteAllGenerators();
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__ShakeObject3D__DeleteAll.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__ShakeObject3D__DeleteAll.userFunc0x1219188(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject3D__DeleteAll.userFunc0x14cc9b0(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -49,16 +49,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },

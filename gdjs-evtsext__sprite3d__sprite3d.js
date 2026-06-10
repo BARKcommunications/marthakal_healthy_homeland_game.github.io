@@ -90,7 +90,7 @@ gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.GDObjectObj
 gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.userFunc0x1494b70 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.userFunc0x17cbc60 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.CustomRuntimeObject} */
 const object = objects[0];
@@ -118,7 +118,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.GDObjectObjects1;
-gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.userFunc0x1494b70(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Sprite3D__Sprite3D.Sprite3D.prototype.onCreatedContext.userFunc0x17cbc60(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -156,16 +156,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },

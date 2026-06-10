@@ -174,7 +174,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26982468);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(27257396);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.doStepPreEventsContext.GDObjectObjects1);
@@ -226,16 +226,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -328,16 +333,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -469,16 +479,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -570,16 +585,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -687,16 +707,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -789,16 +814,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -906,16 +936,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -1008,16 +1043,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -1125,16 +1165,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
@@ -1174,7 +1219,7 @@ gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext
 gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext.userFunc0x127d4f8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext.userFunc0x1901788 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Cube3DRuntimeObject} */
 const object = objects[0];
@@ -1192,7 +1237,7 @@ gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext.GDObjectObjects1;
-gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext.userFunc0x127d4f8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Billboard__Billboard.Billboard.prototype.EnableTransparencyContext.userFunc0x1901788(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -1233,16 +1278,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },

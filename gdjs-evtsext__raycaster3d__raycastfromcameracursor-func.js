@@ -10,7 +10,7 @@ gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.idToCallbackMap = new Map();
 gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.userFunc0x11984b8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.userFunc0x8f62c8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const { camera, input } = gdjs.evtTools;
 
@@ -41,7 +41,7 @@ gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.eventsList0 = function(runtim
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.GDObjectObjects1;
-gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.userFunc0x11984b8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Raycaster3D__RaycastFromCameraCursor.userFunc0x8f62c8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
@@ -74,16 +74,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },

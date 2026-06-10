@@ -167,7 +167,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.car_95driving_95gameCode.asyncCallback29380892 = function (runtimeScene, asyncObjectsList) {
+};gdjs.car_95driving_95gameCode.asyncCallback29696412 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.car_95driving_95gameCode.localVariables);
 {gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 9);
 }
@@ -176,7 +176,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.car_95driving_95gameCode.l
 gdjs.car_95driving_95gameCode.eventsList2(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.car_95driving_95gameCode.localVariables.length = 0;
 }
-gdjs.car_95driving_95gameCode.idToCallbackMap.set(29380892, gdjs.car_95driving_95gameCode.asyncCallback29380892);
+gdjs.car_95driving_95gameCode.idToCallbackMap.set(29696412, gdjs.car_95driving_95gameCode.asyncCallback29696412);
 gdjs.car_95driving_95gameCode.eventsList3 = function(runtimeScene) {
 
 {
@@ -186,7 +186,7 @@ gdjs.car_95driving_95gameCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.car_95driving_95gameCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.car_95driving_95gameCode.asyncCallback29380892(runtimeScene, asyncObjectsList)), 29380892, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.car_95driving_95gameCode.asyncCallback29696412(runtimeScene, asyncObjectsList)), 29696412, asyncObjectsList);
 }
 }
 
@@ -211,7 +211,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.car_95driving_95gameCode.asyncCallback29396564 = function (runtimeScene, asyncObjectsList) {
+};gdjs.car_95driving_95gameCode.asyncCallback29712084 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.car_95driving_95gameCode.localVariables);
 {gdjs.evtsExt__FlashLayer__FlashLayer.func(runtimeScene, "lightning", 0.05, null);
 }
@@ -220,7 +220,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.car_95driving_95gameCode.l
 gdjs.car_95driving_95gameCode.eventsList4(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.car_95driving_95gameCode.localVariables.length = 0;
 }
-gdjs.car_95driving_95gameCode.idToCallbackMap.set(29396564, gdjs.car_95driving_95gameCode.asyncCallback29396564);
+gdjs.car_95driving_95gameCode.idToCallbackMap.set(29712084, gdjs.car_95driving_95gameCode.asyncCallback29712084);
 gdjs.car_95driving_95gameCode.eventsList5 = function(runtimeScene) {
 
 {
@@ -230,7 +230,7 @@ gdjs.car_95driving_95gameCode.eventsList5 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.car_95driving_95gameCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.car_95driving_95gameCode.asyncCallback29396564(runtimeScene, asyncObjectsList)), 29396564, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.car_95driving_95gameCode.asyncCallback29712084(runtimeScene, asyncObjectsList)), 29712084, asyncObjectsList);
 }
 }
 
@@ -448,7 +448,7 @@ gdjs.car_95driving_95gameCode.mapOfGDgdjs_9546car_959595driving_959595gameCode_9
 gdjs.car_95driving_95gameCode.mapOfGDgdjs_9546car_959595driving_959595gameCode_9546GDlunch_95959595bonusObjects1Objects = Hashtable.newFrom({"lunch_bonus": gdjs.car_95driving_95gameCode.GDlunch_9595bonusObjects1});
 gdjs.car_95driving_95gameCode.mapOfGDgdjs_9546car_959595driving_959595gameCode_9546GDLunch_95959595BonysObjects1Objects = Hashtable.newFrom({"Lunch_Bonys": gdjs.car_95driving_95gameCode.GDLunch_9595BonysObjects1});
 gdjs.car_95driving_95gameCode.mapOfGDgdjs_9546car_959595driving_959595gameCode_9546GDcarObjects1Objects = Hashtable.newFrom({"car": gdjs.car_95driving_95gameCode.GDcarObjects1});
-gdjs.car_95driving_95gameCode.asyncCallback29423004 = function (runtimeScene, asyncObjectsList) {
+gdjs.car_95driving_95gameCode.asyncCallback29738524 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.car_95driving_95gameCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("lunch_bonus"), gdjs.car_95driving_95gameCode.GDlunch_9595bonusObjects2);
 
@@ -458,7 +458,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("lunch_bonus"), gdjs.car_95driving_95
 }
 gdjs.car_95driving_95gameCode.localVariables.length = 0;
 }
-gdjs.car_95driving_95gameCode.idToCallbackMap.set(29423004, gdjs.car_95driving_95gameCode.asyncCallback29423004);
+gdjs.car_95driving_95gameCode.idToCallbackMap.set(29738524, gdjs.car_95driving_95gameCode.asyncCallback29738524);
 gdjs.car_95driving_95gameCode.eventsList15 = function(runtimeScene) {
 
 {
@@ -469,7 +469,7 @@ gdjs.car_95driving_95gameCode.eventsList15 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.car_95driving_95gameCode.localVariables);
 for (const obj of gdjs.car_95driving_95gameCode.GDlunch_9595bonusObjects1) asyncObjectsList.addObject("lunch_bonus", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.car_95driving_95gameCode.asyncCallback29423004(runtimeScene, asyncObjectsList)), 29423004, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.car_95driving_95gameCode.asyncCallback29738524(runtimeScene, asyncObjectsList)), 29738524, asyncObjectsList);
 }
 }
 
@@ -483,7 +483,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29424604);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29740124);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "skid.mp3", false, 80, gdjs.randomFloatInRange(0.85, 1.15));
@@ -562,7 +562,7 @@ for (var i = 0, k = 0, l = gdjs.car_95driving_95gameCode.GDcar_9595game_9595intr
 gdjs.car_95driving_95gameCode.GDcar_9595game_9595introObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29377492);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29693012);
 }
 }
 if (isConditionTrue_0) {
@@ -588,7 +588,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29379844);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29695364);
 }
 }
 if (isConditionTrue_0) {
@@ -815,7 +815,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "distance") >= 60;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29392252);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29707772);
 }
 }
 if (isConditionTrue_0) {
@@ -878,7 +878,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "distance") >= 30;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29394924);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29710444);
 }
 }
 if (isConditionTrue_0) {
@@ -900,7 +900,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "wallaby") > gdjs.randomInRange(15, 60);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29397956);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29713476);
 }
 }
 if (isConditionTrue_0) {
@@ -1058,7 +1058,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29409100);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29724620);
 }
 }
 }
@@ -1120,7 +1120,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29413172);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29728692);
 }
 }
 }
@@ -1172,7 +1172,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29415852);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29731372);
 }
 }
 }
@@ -1225,7 +1225,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29418852);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29734372);
 }
 }
 }
@@ -1262,7 +1262,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.car_95driving_95gameCode.mapOfGDgdjs_9546car_959595driving_959595gameCode_9546GDcarObjects1Objects, gdjs.car_95driving_95gameCode.mapOfGDgdjs_9546car_959595driving_959595gameCode_9546GDwallabyObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29420516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29736036);
 }
 }
 if (isConditionTrue_0) {

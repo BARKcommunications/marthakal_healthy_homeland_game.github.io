@@ -164,7 +164,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.dishes_95gameCode.mapOfGDgdjs_9546dishes_959595gameCode_9546GDgermObjects2Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29153620);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29469140);
 }
 }
 if (isConditionTrue_0) {
@@ -206,7 +206,7 @@ gdjs.dishes_95gameCode.eventsList3 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29157948);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29473468);
 }
 if (isConditionTrue_0) {
 gdjs.dishes_95gameCode.GDPixiDustObjects2.length = 0;
@@ -347,7 +347,7 @@ for (var i = 0, k = 0, l = gdjs.dishes_95gameCode.GDdishObjects2.length;i<l;++i)
 gdjs.dishes_95gameCode.GDdishObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29146316);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29461836);
 }
 }
 if (isConditionTrue_0)
@@ -382,7 +382,7 @@ for (var i = 0, k = 0, l = gdjs.dishes_95gameCode.GDdishObjects1.length;i<l;++i)
 gdjs.dishes_95gameCode.GDdishObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29148284);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29463804);
 }
 }
 }
@@ -421,7 +421,7 @@ for (var i = 0, k = 0, l = gdjs.dishes_95gameCode.GDdishObjects1.length;i<l;++i)
 gdjs.dishes_95gameCode.GDdishObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29149916);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29465436);
 }
 }
 if (isConditionTrue_0) {

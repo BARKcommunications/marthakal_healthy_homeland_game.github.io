@@ -9,7 +9,7 @@ gdjs.evtsExt__ShakeObject3D__DefineHelperClasses = {};
 gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x8a2510 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x14cc9b0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 if (gdjs._shakeObjectExtension) {
     return;
@@ -650,7 +650,7 @@ gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x8a2510(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ShakeObject3D__DefineHelperClasses.userFunc0x14cc9b0(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -681,16 +681,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },

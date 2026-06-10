@@ -9,13 +9,13 @@ gdjs.evtsExt__FlashLayer__FlashLayer = {};
 gdjs.evtsExt__FlashLayer__FlashLayer.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__FlashLayer__FlashLayer.asyncCallback27956124 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__FlashLayer__FlashLayer.asyncCallback28231252 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 {gdjs.evtTools.camera.hideLayer(runtimeScene, eventsFunctionContext.getArgument("Layer"));
 }
 eventsFunctionContext.localVariables.length = 0;
 }
-gdjs.evtsExt__FlashLayer__FlashLayer.idToCallbackMap.set(27956124, gdjs.evtsExt__FlashLayer__FlashLayer.asyncCallback27956124);
+gdjs.evtsExt__FlashLayer__FlashLayer.idToCallbackMap.set(28231252, gdjs.evtsExt__FlashLayer__FlashLayer.asyncCallback28231252);
 gdjs.evtsExt__FlashLayer__FlashLayer.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -25,7 +25,7 @@ gdjs.evtsExt__FlashLayer__FlashLayer.eventsList0 = function(runtimeScene, events
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(eventsFunctionContext.getArgument("Duration")), (runtimeScene) => (gdjs.evtsExt__FlashLayer__FlashLayer.asyncCallback27956124(runtimeScene, eventsFunctionContext, asyncObjectsList)), 27956124, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(eventsFunctionContext.getArgument("Duration")), (runtimeScene) => (gdjs.evtsExt__FlashLayer__FlashLayer.asyncCallback28231252(runtimeScene, eventsFunctionContext, asyncObjectsList)), 28231252, asyncObjectsList);
 }
 }
 
@@ -77,16 +77,21 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
-        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
-        runtimeScene.createObject(objectsList.firstKey());
-      if (object) {
-        objectsList.get(objectsList.firstKey()).push(object);
-        if (!(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName))) {
+      if (parentEventsFunctionContext && !(scopeInstanceContainer &&
+          scopeInstanceContainer.isObjectRegistered(objectName))) {
+        const object = parentEventsFunctionContext.createObject(objectsList.firstKey());
+        if (object) {
+          objectsList.get(objectsList.firstKey()).push(object);
           eventsFunctionContext._objectArraysMap[objectName].push(object);
         }
+        return object;
+      } else {
+        const object = runtimeScene.createObject(objectsList.firstKey());
+        if (object) {
+          eventsFunctionContext._objectArraysMap[objectName].push(object);
+        }
+        return object;
       }
-      return object;
     }
     return null;
   },
